@@ -1,5 +1,17 @@
- html{
+ *{
     box-sizing :border-box;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eeeae4;;
+}
+.div{
+
+    margin: 30px;
+    padding: 5px;
+    width: 350px;
+    line-height: 25px;
+    
+
+}
+.logo{
+    font-size: 15px;
 }
