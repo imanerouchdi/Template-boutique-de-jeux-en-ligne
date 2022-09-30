@@ -1,18 +1,76 @@
- *{
-    box-sizing :border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeeae4;
-    margin:auto;  /*les element dans centre */
+*{
+    box-sizing: border-box;
+    color: #ddd;
+    
 }
-.div{
-
-    margin: 30px;
-    padding: 5px;
-    width: 350px;
-    line-height: 15px;
+.container{
+    background-image: url(image/3.jpg);
+    background-repeat: no-repeat;
 }
-nav{
-    display: flex;
+header{
+    /* width: 1200px; */
+    height: 80px;
+}
+ .logo{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
     text-decoration: none;
+    padding: 16px;
+    float: left;
+    margin: 15px;
+    
 }
+.links li  {
+    /* width: 520px; */
+    
+    display: flex;
+    float: right;
+    list-style-type: none;
+    padding: 30px;
+    
+    font-weight: bold;
+}
+.links a{
+    text-decoration: none;
+    
+}
+.links a:hover{
+    text-decoration:underline ;
+    opacity: 0.5;
+}
+.nav_pages{
+    padding: 20px ;
+    
+    margin: 60px auto;
+}
+.nav_pages a{
+    text-decoration: none;
+    padding: 20px;
+}
+.nav_pages a:hover{
+    text-decoration:underline ;
+}
+section h1 , p{
+    width: 400px;
+    margin: 50px;
+}
+section section {
+    
+    margin: 60px;
+    display: inline-block;
+}
+.images section img{
+    width: 200px;
+    height: 350px;
+    display: block;
+    border-radius: 15px;
+
+}
+section h2{
+    text-align: center;
+}
+section #rrp,#price{
+    display: flex;
+}
+
 
