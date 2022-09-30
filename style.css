@@ -1,66 +1,61 @@
 *{
     box-sizing: border-box;
-    color: #ddd;
-    
+    color: #ddd; 
 }
 .container{
     background-image: url(image/3.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 header{
-    /* width: 1200px; */
     height: 80px;
+    border: 3px solid rgb(210, 16, 16);
+
 }
  .logo{
     font-family: 'Satisfy', cursive;
     font-size: 35px;
     text-decoration: none;
-    padding: 16px;
     float: left;
-    margin: 15px;
-    
+    margin: 26px;
 }
-.links li  {
-    /* width: 520px; */
-    
+.links li  { 
     display: flex;
     float: right;
     list-style-type: none;
     padding: 30px;
-    
     font-weight: bold;
+    margin: 15px;
 }
 .links a{
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 .links a:hover{
     text-decoration:underline ;
     opacity: 0.5;
 }
-.nav_pages{
-    padding: 20px ;
+/*Section navBar 2*/
+.nav_pages li {
+    list-style: none;
+    display: flex;
+    color: rgb(249, 248, 248);
     
-    margin: 60px auto;
 }
-.nav_pages a{
-    text-decoration: none;
-    padding: 20px;
+.nav_pages  a{
+    text-decoration:none ;
 }
-.nav_pages a:hover{
-    text-decoration:underline ;
-}
+
+/*Section h1-P*/
 section h1 , p{
     width: 400px;
     margin: 50px;
 }
-section section {
-    
+.images section {
     margin: 60px;
     display: inline-block;
 }
 .images section img{
-    width: 200px;
+    width: 150px;
     height: 350px;
     display: block;
     border-radius: 15px;
