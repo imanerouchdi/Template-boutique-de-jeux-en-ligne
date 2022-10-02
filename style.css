@@ -1,76 +1,87 @@
 *{
     box-sizing: border-box;
-    color: #ddd;
+    margin: 0;
+    padding: 0;
+    color: #ddd;   
+}
+body{
+    background-image: url(image/5.jpg);
+    background-size: cover;
     
 }
-.container{
-    background-image: url(image/3.jpg);
-    background-repeat: no-repeat;
+li ,a{
+    
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 header{
-    /* width: 1200px; */
-    height: 80px;
+    display: flex;
+    justify-content: space-between;   
 }
- .logo{
+header .logo {
     font-family: 'Satisfy', cursive;
     font-size: 35px;
-    text-decoration: none;
-    padding: 16px;
-    float: left;
-    margin: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
     
 }
-.links li  {
-    /* width: 520px; */
-    
-    display: flex;
-    float: right;
-    list-style-type: none;
-    padding: 30px;
-    
-    font-weight: bold;
+header nav .nav_links li{
+    list-style: none;
+    margin-right: 70px;
+    display: inline;
 }
-.links a{
-    text-decoration: none;
-    
+header nav ul {
+    margin-top: 40px; 
 }
-.links a:hover{
-    text-decoration:underline ;
-    opacity: 0.5;
-}
-.nav_pages{
-    padding: 20px ;
-    
-    margin: 60px auto;
+.nav_pages {
+    margin: 80px 15px;
 }
 .nav_pages a{
     text-decoration: none;
     padding: 20px;
 }
-.nav_pages a:hover{
-    text-decoration:underline ;
+.section_body {
+    margin-bottom: 50px;
+    margin-left: 30px;
 }
-section h1 , p{
-    width: 400px;
-    margin: 50px;
+.section_body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 650px;
+    line-height: 25px;
 }
-section section {
-    
-    margin: 60px;
+.posters{
+    justify-content: center;
+    margin:0 70px ;
+}
+.posters section{
     display: inline-block;
+    margin: 20px 30px;
+    border: 3px solid #eee;
+    justify-content: center;
+    border-radius: 8px;
+    
 }
-.images section img{
-    width: 200px;
-    height: 350px;
-    display: block;
+.posters section img {
+    width: 250px;
+    height: 450px;
+    margin: 10px;
     border-radius: 15px;
+   
+}
+.posters section span{
+    display: block;
+}
+.posters section h2,span{
+    margin:  10px 25px ;
 
 }
-section h2{
-    text-align: center;
+.posters section #rrp::first-line{
+    text-transform: uppercase;
 }
-section #rrp,#price{
-    display: flex;
+.posters section #price::first-letter{
+    text-transform: uppercase;
 }
-
-
+.posters section #saving::first-letter{
+    text-transform: uppercase;
+}
