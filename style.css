@@ -1,36 +1,18 @@
 *{
     box-sizing: border-box;
-<<<<<<< HEAD
-    margin: 0;
-    padding: 0;
-    color: #ddd;   
-}
-body{
-    background-image: url(image/5.jpg);
-    background-size: cover;
-    
-}
-li ,a{
-    
-    font-size: 16px;
-    font-weight: 500;
-=======
     color: #ddd; 
 }
 .container{
-    background-image: url(image/3.jpg);
+    background-image: url(image/5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 header{
     height: 80px;
-    border: 3px solid rgb(210, 16, 16);
-
 }
  .logo{
     font-family: 'Satisfy', cursive;
     font-size: 35px;
->>>>>>> 8253accaadab05412bbf34a530a92a8079fc0e32
     text-decoration: none;
     float: left;
     margin: 26px;
