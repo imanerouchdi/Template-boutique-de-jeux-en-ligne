@@ -1,37 +1,32 @@
 *{
     box-sizing: border-box;
-    color: #ddd; 
-}
-.container{
-    background-image: url(image/5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: #000; 
+    margin: 0px;
+    padding: 0px;
 }
 header{
-    height: 80px;
-    border: 2px solid;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;    */
 }
  .logo{
+    width: 100px;
+    text-align: center;
     font-family: 'Satisfy', cursive;
     font-size: 35px;
     text-decoration: none;
-    float: left;
     margin: 10px 46px;
+    color: #eee;
+    background-color: #000;
 }
-header .logo {
-    font-family: 'Satisfy', cursive;
-    font-size: 35px;
-    margin-top: 25px;
-    margin-left: 25px;
-    
+header nav ul {
+    display:flex ; 
 }
 .links li  { 
     display: flex;
-    float: right;
     list-style-type: none;
     font-weight: bold;
-    justify-content: flex-end;
-    margin-right: 25px;
+    justify-content: flex-start;
 }
 .links a{
     text-decoration: none;  
@@ -41,56 +36,36 @@ header .logo {
     text-decoration:underline ;
     opacity: 0.5;
 }
-/*Section navBar 2*/
-.nav_pages li {
-    list-style: none;
-    display: flex;
-    color: rgb(249, 248, 248);
-    
-}
-.nav_pages  a{
-    text-decoration:none ;
-}
-header{
-    display: flex;
-    justify-content: space-between;   
-}
-header nav .nav_links li{
-    list-style: none;
-    margin-right: 70px;
-    display: inline;
-}
-header nav ul {
-    margin-top: 40px; 
+.nav_pages  a:hover{
+    text-decoration: underline;
 }
 .nav_pages {
-    margin: 60px 15px;
+    margin-left: 50px;
+    margin-top: 9px;
 }
 .nav_pages a{
     text-decoration: none;
-    padding: 20px;
 }
 .section_body {
+    margin-left: 49px;
     font-family: Arial, Helvetica, sans-serif;
-    width: 650px;
     line-height: 25px;
-}
-.section_body h1{
-    margin-left: 30px;
-
+    margin-top: 38px;
 }
 .section_body p{
-    margin-bottom: 5px;
-    margin-left: 30px;
+    word-wrap: break-word;
+    width: 450px;
 }
 .posters{
-    justify-content: center;
-    margin:0 70px ;
+    /* justify-content: center; */
+    /* margin:0 10px ; */
+    text-align: center;
+    margin-top: 10px;
 }
 .posters section{
     display: inline-block;
     margin: 20px 30px;
-    border: 3px solid #eee;
+    border: 3px solid #000;
     justify-content: center;
     border-radius: 8px;
     
@@ -108,11 +83,6 @@ header nav ul {
 .posters section h2,span{
     margin:  10px 25px ;
 }
-/*Section h1-P*/
-section h1 , p{
-    width: 400px;
-    margin: 50px;
-}
 .images section {
     margin: 60px;
     display: inline-block;
@@ -122,14 +92,19 @@ section h1 , p{
     height: 350px;
     display: block;
     border-radius: 15px;
-
-}
-section h2{
-    text-align: center;
 }
 section #rrp , #price , #saving::first-letter{
     display: flex;
     text-transform: uppercase;
+}
+@media screen and (max-width:375px){
+    header a{
+        display: i;
+    }
+    .links li{
+        margin: 0px;
+    }
+
 }
 
 
