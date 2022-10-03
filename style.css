@@ -97,6 +97,23 @@ section #rrp , #price , #saving::first-letter{
     display: flex;
     text-transform: uppercase;
 }
+footer{
+    display: flex;
+    background-color: #dde;
+    height: 80px;
+    padding-top: 20px;
+    /* justify-content: center; */
+
+}
+footer div{
+    margin-left: 15px;
+    margin-right: 700px;
+}
+footer a{
+    text-decoration: none;  
+    margin:0 35px;
+    
+}
 @media screen and (max-width:375px){
     header a{
         display: i;
