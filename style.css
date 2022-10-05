@@ -4,23 +4,28 @@
     margin: 0px;
     padding: 0px;
 }
-header{
+header {
     display: flex;
     align-items: center;
-    /* justify-content: space-between;    */
+   
 }
- .logo{
-    width: 100px;
+header .logo{
+    background-color: #dde;
+}
+.logo {
+
+    width: 6.25rem;
     text-align: center;
     font-family: 'Satisfy', cursive;
-    font-size: 35px;
-    text-decoration: none;
-    margin: 10px 46px;
-    color: #eee;
-    background-color: #000;
+    font-size: 2.18rem;
+    /* text-decoration: none; */
+    margin:  0.625rem  2.87rem;/*10px 46px*/
+    
+   
 }
 header nav ul {
     display:flex ; 
+    justify-content: space-evenly;   
 }
 .links li  { 
     display: flex;
@@ -40,58 +45,58 @@ header nav ul {
     text-decoration: underline;
 }
 .nav_pages {
-    margin-left: 50px;
-    margin-top: 9px;
+    margin-left: 3.125rem;
+    margin-top: .5625rem;
 }
 .nav_pages a{
     text-decoration: none;
 }
 .section_body {
-    margin-left: 49px;
+    margin-left: 3.0625rem;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 25px;
-    margin-top: 38px;
+    line-height: 1.5625rem;
+    margin-top: 2.375rem;
 }
 .section_body p{
     word-wrap: break-word;
-    width: 450px;
+    width: 28.125rem;
 }
 .posters{
     /* justify-content: center; */
     /* margin:0 10px ; */
     text-align: center;
-    margin-top: 10px;
+    margin-top: .625rem;
 }
 .posters section{
     display: inline-block;
-    margin: 20px 30px;
-    border: 3px solid #000;
+    margin: 1.25rem 1.875rem;
+    border: .1875rem solid #000;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: .5rem;
     
 }
 .posters section img {
-    width: 250px;
-    height: 450px;
-    margin: 10px;
-    border-radius: 15px;
+    width: 15.625rem;
+    height: 28.125rem;
+    margin: .625rem;
+    border-radius: .9375rem;
    
 }
 .posters section span{
     display: block;
 }
 .posters section h2,span{
-    margin:  10px 25px ;
+    margin:  .625rem 1.5625rem ;
 }
 .images section {
-    margin: 60px;
+    margin: 3.75rem;
     display: inline-block;
 }
 .images section img{
-    width: 150px;
-    height: 350px;
+    width: 9.375rem;
+    height: 21.875rem;
     display: block;
-    border-radius: 15px;
+    border-radius: .9375rem;
 }
 section #rrp , #price , #saving::first-letter{
     display: flex;
@@ -100,28 +105,48 @@ section #rrp , #price , #saving::first-letter{
 footer{
     display: flex;
     background-color: #dde;
-    height: 80px;
-    padding-top: 20px;
+    height: 5rem;
+    padding-top: 1.25rem;
     /* justify-content: center; */
 
 }
 footer div{
-    margin-left: 15px;
-    margin-right: 700px;
+    margin-left: .9375rem;
+    /* margin-right: 43.75rem; */
 }
 footer a{
     text-decoration: none;  
-    margin:0 35px;
+    margin:0 2.1875rem;
     
 }
-@media screen and (max-width:375px){
-    header a{
-        display: i;
+@media  (max-width:550px){
+    header{
+        display: block;
+    }
+    .logo{
+        display: flex;
+        padding-top: .1875rem;
+        justify-content: center;
+        /* width: 100%; */
+        margin: 0 auto;
+    } 
+    .logo a{
+        text-decoration: none;
+    }
+    .links{
+        margin: 13px 0;
     }
     .links li{
-        margin: 0px;
+        margin: 13px 0;
     }
-
+    footer div{
+        font-size: 0.8rem;
+    }
+    .posters section img{
+        width: 10rem;
+        height: 18rem;
+    }
+    
 }
 
 
